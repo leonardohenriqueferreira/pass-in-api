@@ -1,0 +1,38 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Test",
+  "details": "Test event",
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/0f4321c8-aad7-4bb1-bf0b-9d680184efaa/attendees
+Content-Type: application/json
+
+{
+  "name": "Leonardo",
+  "email": "contato@leonardohenriqueferreira.com"
+}
+
+###
+
+GET http://localhost:3333/events/0f4321c8-aad7-4bb1-bf0b-9d680184efaa
+Content-Type: application/json
+
+###
+
+GET http://localhost:3333/attendees/1/badge
+Content-Type: application/json
+
+###
+
+GET http://localhost:3333/attendees/1/check-in
+Content-Type: application/json
+
+###
+
+GET http://localhost:3333/events/0f4321c8-aad7-4bb1-bf0b-9d680184efaa/attendees
+Content-Type: application/json
